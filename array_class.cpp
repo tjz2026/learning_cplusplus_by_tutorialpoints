@@ -74,7 +74,14 @@ int array2d:: compare(array2d * arr) {
    return this->get_size() > arr->get_size();
 }
 
+// operator overload
+// overload () to access the data as array2d(i,j)
 
+double& array2d:: operator () (const int i,const int j)
+{
+ return data[i][j]; 
+
+}
 
 
 

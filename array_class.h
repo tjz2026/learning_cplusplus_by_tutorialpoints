@@ -14,6 +14,7 @@ class array2d {
       ~array2d (void);
       int get_size (void);
       int compare(array2d * arr);
+      double & operator () (const int i,const int j);
 };
 
 
